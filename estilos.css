@@ -282,12 +282,16 @@ button:hover {
     margin-top: 10px;
     gap: 30px;
     flex-direction: column;
+
 }
 
 .quest2{
     display: flex;
     align-items: center;
-    gap: 3px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
 }
 
 
@@ -295,6 +299,8 @@ button:hover {
 
     text-align: start;
     font-size: 14px;
+    
+ 
 
  
    
@@ -302,11 +308,13 @@ button:hover {
 }
 
 .group-button {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items:center;
     gap: 5px;
- 
+
+  
    
 
 
@@ -322,29 +330,57 @@ button:hover {
     width: 60px;
     height: 35px;
     color: white;
+    cursor: pointer;
    
 }
 
 .box-like{
     background-color: rgb(164, 235, 164);
+   
+ 
+
 }
 
 .box-dislike{
     background-color: rgb(219, 150, 150);
 }
 
+.radio_label1{
+    cursor: pointer;
+}
+
+.radio_label2{
+    cursor: pointer;
+}
+
 .radio_input{
     display: none;
+    cursor: pointer;
 }
 
 .radio_input:checked + .radio_label1 {
     background-color:#00702b ;
     width: 100%;
     height: 100%;
+   
 }
 .radio_input:checked + .radio_label2 {
     background-color:#d10707 ;
     width: 100%;
     height: 100%;
+}
+
+
+
+@media screen and (min-width:744px) {
+
+    .parrafo-quest {
+
+ 
+    font-size: 20px; 
+  
+    width: 600px;
+
+}
 }
 
