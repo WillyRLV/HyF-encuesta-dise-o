@@ -11,8 +11,8 @@
 }
 
 body {
-
     font-family: 'Lato', sans-serif;
+    overflow: hidden;
 
 
 }
@@ -72,13 +72,18 @@ body svg:nth-child(2) {
 
 
 section {
+ 
     display: flex;
     justify-content: center;
     align-items: center;
     min-width: 100%;
-    min-height: 100vh;
-  
+   height: 100vh;
 
+  
+}
+
+section:nth-child(2){
+    background-color: #1a8888;
 }
 
 .title-color{
@@ -92,10 +97,17 @@ section {
 
 .wrapper {
 
-   display: flex;
-   overflow: hidden;
+display: flex;
 
 }
+
+.wrapper2 {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+
+    
+    }
 
 .cont1 {
     display: flex;
@@ -236,12 +248,22 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 4px;
+    transition: .3s;
 }
 
 .quest h1 {
+    color: #13263d;
     font-size: .7em;
 }
 
+
+.quest:hover{
+    transform: scale(1.1);
+}
+
+.select-sec a {
+    text-decoration: none;
+}
 .circle {
     background-color: #008ca8;
     width: 70px;
@@ -250,14 +272,20 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
+
+
 
 
 .circle img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    
 }
+
+
 
 /*page4*/
 

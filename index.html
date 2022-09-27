@@ -14,7 +14,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body >
     <!--?xml version="1.0" standalone="no"?--> <svg id="sw-js-blob-svg" viewBox="0 0 100 100"
         xmlns="http://www.w3.org/2000/svg">
         <defs>
@@ -55,7 +55,7 @@
     <div class="wrapper ">
 
         <!--section1-->
-        <section class="sec1  " id="initial" data-aos="fade-up" data-aos-duration="3000">
+        <section class="sec1  " id="initial" >
             <div class="cont1">
                 <h1>¡HOLA!</h1>
 
@@ -65,17 +65,18 @@
                     <h1 class="title-color">ENCUESTA DE CLIMA Y CULTURA</h1>
 
                     <img src="./Customer-Survey-pana.png" alt="" width="250px">
-
+                    <a style="text-decoration: none; color: brown;" href="#login" target="_parent">
                     <h2 style="font-size: 19px">
-                        <a style="text-decoration: none; color: brown;" href="#login">Continuar →</a>
+                       Continuar →
                     </h2>
+                </a>
 
                 </div>
             </div>
         </section>
  <!--=======-->
   <!--section2-->
-        <section class="sec2 " id="login" data-aos="flip-left">
+        <section class="sec2 " id="login" >
             <div class="cont2">
                 <img src="perfil.PNG" alt="" width="130">
                 <h1>BIENVENIDO</h1>
@@ -93,11 +94,7 @@
     border-radius: 6px; ">Enviar</button>
     
                     </form>
-                    <!-- <h2 style="font-size: 19px">
-
-                        <a style="text-decoration: none; color: brown;" href="#initial">Retroceder →</a>
-                    </h2> -->
-
+            
                 </div>
             </div>
         </section>
@@ -258,12 +255,12 @@
         </section> -->
     </div>
                 
+<script>
+    window.onbeforeunload = () =>{
+        history.back();
 
-           
-
-    </div>
-   
-    </div>
+    }
+    </script>
     <script src="app.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
