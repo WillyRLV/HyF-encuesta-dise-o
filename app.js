@@ -21,6 +21,7 @@ var dni = document.getElementById('DNI').value;
             else {
                 alert("no existe esa identificacion")
             }
+
 }
 
 // function auth() {

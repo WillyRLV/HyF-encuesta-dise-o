@@ -46,21 +46,25 @@
 
     <header class="header container">
         <div class="logo">
+           
             <img src="../logo.png" alt="" width="80">
             <h1>H&F CONSULTING</h1>
+        
+            
         </div>
-
+    
     </header>
 
     <div class="wrapper2">
 
   <!--section3-->
-        <section class="sec3 " id="dimension" data-aos="fade-left">
-            <div class="cont3">
+        <section class="sec3 " id="dimension" >
+            <a class="skip" href="../HyF-encuesta-dise-o/index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></i></a>
+            <div class="cont3" data-aos="flip-left">
                 <h1 class="title-color">DIMENSIONES</h1>
                 <p>Selecciona la dimension de tu preferencia y contesta las preguntas:</p>
                 <div class="select-sec">
-                    <a href="#credibilidad">
+                    <a href="#credibilidad" target="_parent">
                         <div class="quest">
 
                             <div class="circle">
@@ -115,10 +119,11 @@
 <!--=======-->
   <!--section4-->
         <section class="sec4 " id="credibilidad">
+            <a class="skip" href="#dimension"><i class="fa-solid fa-arrow-left"></i></a>
             <div class="cont4">
                 <h1 class="title-color">CREDIBILIDAD</h1>
                 <div class="container-form">
-                    <form action="" >
+                    <form id="myForm" action="" >
                         <div class="quest2">
                             <p class="parrafo-quest">
                                 La empresa me comunica asuntos de importancia relacionados al negocio.
@@ -203,8 +208,7 @@
                                 </div>
                             </div>
                         </div>
-
-                        <button id="submit-in" type="submit"   onclick="back()" style=" margin-top: 30px ;width: 120px; height: 40px; border: none;
+                        <button id="submit-in" type="submit"   onclick="back()" style="height: 40px; border: none;
                         border-radius: 6px; ">Enviar</button>
                     </form>
 
@@ -223,10 +227,15 @@
     </div>
     <script>
         function back() {
-            alert("gracias por hacer la encuesta")
+      
+            alert("gracias por hacer la encuesta");
+            // document.getElementById("myForm").reset();
+            window.location.href = '#dimension';
+          
+ }
             
             
-        }
+        
     </script>
     <script src="app.js"></script>
 

@@ -54,14 +54,14 @@ body svg:nth-child(2) {
     z-index: 5;
     top: 0;
 
-   
-
 
 }
 
 .logo {
     display: flex;
     align-items: center;
+
+
 }
 
 .logo h1 {
@@ -82,9 +82,6 @@ section {
   
 }
 
-section:nth-child(2){
-    background-color: #1a8888;
-}
 
 .title-color{
     font-size: 33px !important;
@@ -103,8 +100,7 @@ display: flex;
 
 .wrapper2 {
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    
 
     
     }
@@ -333,6 +329,29 @@ button:hover {
  
    
 
+}
+.sec4{
+    position: relative;
+    
+}
+
+.cont4 button{
+    width: 90px;
+    margin: auto;
+
+}
+.skip{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-30px, 30px);
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 30px;
+    
+  
+
+  
 }
 
 .group-button {
