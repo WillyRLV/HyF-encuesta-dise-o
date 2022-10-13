@@ -16,6 +16,8 @@ var dni = document.getElementById('DNI').value;
 
     if (dni == '1111') {
                 window.location.replace("../HyF-encuesta-dise-o/encuesta/index.html")
+                // window.location.replace("./encuesta/index.html")
+
         
             }
             else {
