@@ -63,8 +63,10 @@
 
         <!--section3-->
         <section class="sec3 " id="dimension">
-            <a class="skip-home" id="skip-home" href="../index.html"><i
-                    class="fa-solid fa-arrow-right-from-bracket"></i></i></a>
+            <!-- <a class="skip-home" id="skip-home" href="../index.html"><i
+                    class="fa-solid fa-arrow-right-from-bracket"></i></i></a> -->
+                    <button id="skip-home"  style="cursor: pointer;" onclick="home()" type="button"><i
+                        class="fa-solid fa-arrow-right-from-bracket skip-home"></i></button>
             <div class="cont3" data-aos="flip-left">
                 <h1 class="title-color">DIMENSIONES</h1>
                 <p>Selecciona la dimension de tu preferencia y contesta las preguntas:</p>
@@ -79,57 +81,68 @@
                         </div>
                     </a> -->
 
-                    <button type="button" onclick="show('#credibilidad')" style="background:transparent; border: none;">
-                        <div class="quest">
+                    <button id="btn1" type="button" onclick="show('#credibilidad')"
+                        style="background:transparent; border: none;">
+                        <div id="firstq" class="quest hover">
 
                             <div class="circle">
-                                <img src="../img/credibilidad.jpeg" alt="">
+                                <img id="img1" src="../img/credibilidad.jpeg" alt="">
                             </div>
-                            <h1>CREDIBILIDAD</h1>
+                            <h1 id="holitas">CREDIBILIDAD</h1>
                         </div>
                     </button>
                     <!-- <a href="#respeto" target="_parent"> -->
-                        <button type="button" onclick="show('#respeto')" style="background:transparent; border: none;">
-                        <div class="quest">
+                    <button id="btn2" type="button" onclick="show('#respeto')" style="background:transparent; border: none;">
+                        <div id="firstq2" class="quest hover">
                             <div class="circle">
-                                <img src="../img/respeto.png" alt="">
+                                <img id="img2" src="../img/respeto.png" alt="">
                             </div>
                             <h1>RESPETO</h1>
                         </div>
                     </button>
                     <!-- </a> -->
-                    <button type="button" onclick="show('#imparcialidad')" style="background:transparent; border: none;">
-                    <div class="quest">
-                        <div class="circle">
-                            <img src="../img/imparcialidad.jpeg" alt="">
+                    <button  id="btn3" type="button" onclick="show('#imparcialidad')"
+                        style="background:transparent; border: none;">
+                        <div id="firstq3" class="quest hover">
+                            <div class="circle">
+                                <img id="img3" src="../img/imparcialidad.jpeg" alt="">
+                            </div>
+                            <h1>IMPARCIALIDAD</h1>
                         </div>
-                        <h1>IMPARCIALIDAD</h1>
-                    </div>
-                </button>
-                    <div class="quest">
-                        <div class="circle">
-                            <img src="../img/proposito.jpeg" alt="">
+                    </button>
+
+                    <button id="btn4" type="button" onclick="show('#proposito')" style="background:transparent; border: none;">
+                        <div id="firstq4" class="quest hover">
+                            <div class="circle">
+                                <img id="img4" src="../img/proposito.jpeg" alt="">
+                            </div>
+                            <h1>PROPÓSITO</h1>
                         </div>
-                        <h1>PROPÓSITO</h1>
-                    </div>
-                    <div class="quest">
-                        <div class="circle">
-                            <img src="../img/orgullo.jpeg" alt="">
+                    </button>
+                    <button id="btn5" type="button" onclick="show('#orgullo')" style="background:transparent; border: none;">
+                        <div id="firstq5" class="quest hover">
+                            <div class="circle">
+                                <img id="img5" src="../img/orgullo.jpeg" alt="">
+                            </div>
+                            <h1>ORGULLO</h1>
                         </div>
-                        <h1>ORGULLO</h1>
-                    </div>
-                    <div class="quest">
-                        <div class="circle">
-                            <img src="../img/seguridad.jpeg" alt="">
+                    </button>
+                    <button id="btn6" type="button" onclick="show('#seguridad')" style="background:transparent; border: none;">
+                        <div id="firstq6" class="quest hover">
+                            <div class="circle">
+                                <img id="img6" src="../img/seguridad.jpeg" alt="">
+                            </div>
+                            <h1>SEGURIDAD </h1>
                         </div>
-                        <h1>SEGURIDAD </h1>
-                    </div>
-                    <div class="quest">
-                        <div class="circle">
-                            <img src="../img/camaraderia.jpeg" alt="">
+                    </button>
+                    <button id="btn7" type="button" onclick="show('#camaraderia')" style="background:transparent; border: none;">
+                        <div id="firstq7" class="quest hover">
+                            <div class="circle">
+                                <img id="img7" src="../img/camaraderia.jpeg" alt="">
+                            </div>
+                            <h1>CAMARADADERÍA</h1>
                         </div>
-                        <h1>CAMARADADERÍA</h1>
-                    </div>
+                    </button>
 
                 </div>
             </div>
@@ -145,7 +158,7 @@
             <div class="cont4">
                 <h1 class="title-color">CREDIBILIDAD</h1>
                 <div class="container-form">
-                    <form name="myForm" id="myForm" action="" >
+                    <form name="myForm" id="myForm" action="">
                         <div class="cont-form-two">
                             <div class="quest2">
                                 <p class="parrafo-quest">
@@ -232,9 +245,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="button button-sec" role="button" type="submit" id="submit-in"  style="height: 40px; border: none;
+                            <button class="button button-sec" role="button" type="submit" id="submit-in" style="height: 40px; border: none;
                         border-radius: 6px; ">Enviar</button>
-                      
+
                         </div>
                     </form>
 
@@ -244,12 +257,11 @@
             </div>
         </section>
 
-
-
         <!--section5-->
         <section class="sec5 " id="respeto">
             <!-- <a class="skip" href="#dimension"><i class="fa-solid fa-arrow-left"></i></a> -->
-            <button id="skip" style="cursor: pointer;" class="skip" onclick="backdim()" type="button"><i class="fa-solid fa-arrow-left"></i></button>
+            <button id="skip" style="cursor: pointer;" class="skip" onclick="backdim()" type="button"><i
+                    class="fa-solid fa-arrow-left"></i></button>
             <div class="cont4">
                 <h1 class="title-color">RESPETO</h1>
                 <div class="container-form">
@@ -343,7 +355,8 @@
                                 </div>
                             </div>
 
-                            <button class="button button-sec" id="button-sig" type="button" onclick="next('cont-form-two','cont-form-two1')" style="height: 40px; width:99px ; border: none;
+                            <button class="button button-sec" id="button-sig" type="button"
+                                onclick="next('cont-form-two','cont-form-two1')" style="height: 40px; width:99px ; border: none;
                     border-radius: 6px; ">Siguiente</button>
                             <!-- <button id="submit-in" type="submit"   onclick="back()" style="height: 40px; border: none;
                     border-radius: 6px; ">Enviar</button> -->
@@ -460,7 +473,8 @@
                             </div>
                             <div style="display: flex; gap: -30;">
 
-                                <button class=" button button-sec" id="button-back" type="button" onclick="backq('cont-form-two1','cont-form-two')" style="height: 40px; width:118px ; border: none;
+                                <button class=" button button-sec" id="button-back" type="button"
+                                    onclick="backq('cont-form-two1','cont-form-two')" style="height: 40px; width:118px ; border: none;
                     border-radius: 6px;  ">Retroceder</button>
                                 <button class="button button-sec" id="submit-form" type="submit" style="height: 40px; width:118px ; border: none;
                     border-radius: 6px;  ">Enviar</button>
@@ -477,10 +491,11 @@
         </section>
 
 
-           <!--section6-->
-           <section class="sec6 " id="imparcialidad">
+        <!--section6-->
+        <section class="sec6 " id="imparcialidad">
             <!-- <a class="skip" href="#dimension"><i class="fa-solid fa-arrow-left"></i></a> -->
-            <button id="skip" style="cursor: pointer;" class="skip" onclick="backdim()" type="button"><i class="fa-solid fa-arrow-left"></i></button>
+            <button id="skip" style="cursor: pointer;" class="skip" onclick="backdim()" type="button"><i
+                    class="fa-solid fa-arrow-left"></i></button>
             <div class="cont4">
                 <h1 class="title-color">IMPARCIALIDAD</h1>
                 <div class="container-form">
@@ -489,7 +504,7 @@
                         <div class="cont-form-two" id="obj">
                             <div class="quest2">
                                 <p class="parrafo-quest">
-                                    A las personas aquí se les paga justamente por el trabajo que hacen. 
+                                    A las personas aquí se les paga justamente por el trabajo que hacen.
                                 </p>
 
                                 <div class="group-button">
@@ -510,7 +525,7 @@
 
                             <div class="quest2">
                                 <p class="parrafo-quest">
-                                    Siento que recibo un buen trato, independiente de mi posición en la organización. 
+                                    Siento que recibo un buen trato, independiente de mi posición en la organización.
                                 </p>
 
                                 <div class="group-button">
@@ -531,7 +546,7 @@
 
                             <div class="quest2">
                                 <p class="parrafo-quest">
-                                    Todos(as) tenemos la oportunidad de recibir un reconocimiento especial. 
+                                    Todos(as) tenemos la oportunidad de recibir un reconocimiento especial.
                                 </p>
 
                                 <div class="group-button">
@@ -552,7 +567,7 @@
 
                             <div class="quest2">
                                 <p class="parrafo-quest">
-                                    Recibo un buen trato, independiente de mi posición en la organización. 
+                                    Recibo un buen trato, independiente de mi posición en la organización.
                                 </p>
 
                                 <div class="group-button">
@@ -571,7 +586,8 @@
                                 </div>
                             </div>
 
-                            <button class="button button-sec" id="button-sig" type="button" onclick="next('obj','obj1')" style="height: 40px; width:99px ; border: none;
+                            <button class="button button-sec" id="button-sig" type="button" onclick="next('obj','obj1')"
+                                style="height: 40px; width:99px ; border: none;
                     border-radius: 6px; ">Siguiente</button>
                             <!-- <button id="submit-in" type="submit"   onclick="back()" style="height: 40px; border: none;
                     border-radius: 6px; ">Enviar</button> -->
@@ -582,7 +598,7 @@
 
                             <div class="quest2">
                                 <p class="parrafo-quest">
-                                    Los ascensos son transparentes, objetivos y justos. 
+                                    Los ascensos son transparentes, objetivos y justos.
                                 </p>
 
                                 <div class="group-button">
@@ -603,7 +619,8 @@
 
                             <div class="quest2">
                                 <p class="parrafo-quest">
-                                    Las personas evitan la manipulación, los rumores y "argollas" para conseguir sus objetivos. 
+                                    Las personas evitan la manipulación, los rumores y "argollas" para conseguir sus
+                                    objetivos.
                                 </p>
 
                                 <div class="group-button">
@@ -624,7 +641,7 @@
 
                             <div class="quest2">
                                 <p class="parrafo-quest">
-                                    Las personas son tratadas de manera justa sin importar su edad. 
+                                    Las personas son tratadas de manera justa sin importar su edad.
                                 </p>
 
                                 <div class="group-button">
@@ -645,7 +662,7 @@
 
                             <div class="quest2">
                                 <p class="parrafo-quest">
-                                    Las personas son tratadas de manera justa sin importar su condición socioeconómica. 
+                                    Las personas son tratadas de manera justa sin importar su condición socioeconómica.
                                 </p>
 
                                 <div class="group-button">
@@ -686,7 +703,8 @@
                             </div>
                             <div style="display: flex; gap: -30;">
 
-                                <button class=" button button-sec" id="button-back" type="button" onclick="backq('obj1','obj')" style="height: 40px; width:118px ; border: none;
+                                <button class=" button button-sec" id="button-back" type="button"
+                                    onclick="backq('obj1','obj')" style="height: 40px; width:118px ; border: none;
                     border-radius: 6px;  ">Retroceder</button>
                                 <button class="button button-sec" id="submit-form" type="submit" style="height: 40px; width:118px ; border: none;
                     border-radius: 6px;  ">Enviar</button>
@@ -701,6 +719,581 @@
                 </div>
             </div>
         </section>
+
+        <!--section7-->
+        <section class="sec7 " id="proposito">
+            <!-- <a id="skip"  class="skip" href="#dimension"><i class="fa-solid fa-arrow-left"></i></a> -->
+            <!-- <button id="skip" style="cursor: pointer;" class="skip" onclick="backdim()" type="button"><i class="fa-solid fa-arrow-left"></i></button> -->
+
+            <div class="cont4">
+                <h1 class="title-color">PROÓSITO</h1>
+                <div class="container-form">
+                    <form name="myForm3" id="myForm" action="">
+                        <div class="cont-form-two">
+                            <div class="quest2">
+                                <p class="parrafo-quest">
+                                    Tengo claro de qué manera mi trabajo contribuye al propósito de la organización.
+                                </p>
+
+                                <div class="group-button">
+                                    <div class="box-like space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="3quest1"
+                                            id="3myRadio1">
+                                        <label class=" radio_label1" for="3myRadio1"><i
+                                                class="fa-regular fa-thumbs-up"></i></label>
+                                    </div>
+                                    <div class="box-dislike space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="3quest1"
+                                            id="3myRadio2">
+                                        <label class="radio_label2" for="3myRadio2"><i
+                                                class="fa-regular fa-thumbs-down"></i></i></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quest2">
+                                <p class="parrafo-quest">
+                                    Tengo claro cómo mi proposito personal está alineado al propósito de la
+                                    organización.
+                                </p>
+
+                                <div class="group-button">
+                                    <div class="box-like space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="3quest2"
+                                            id="3myRadio3">
+                                        <label class=" radio_label1" for="3myRadio3"><i
+                                                class="fa-regular fa-thumbs-up"></i></label>
+                                    </div>
+                                    <div class="box-dislike space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="3quest2"
+                                            id="3myRadio4">
+                                        <label class="radio_label2" for="3myRadio4"><i
+                                                class="fa-regular fa-thumbs-down"></i></i></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="button button-sec" role="button" type="submit" id="submit-in" style="height: 40px; border: none;
+                        border-radius: 6px; ">Enviar</button>
+
+                        </div>
+                    </form>
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <!--section8-->
+        <section class="sec8 " id="orgullo">
+            <!-- <a class="skip" href="#dimension"><i class="fa-solid fa-arrow-left"></i></a> -->
+            <button id="skip" style="cursor: pointer;" class="skip" onclick="backdim()" type="button"><i
+                    class="fa-solid fa-arrow-left"></i></button>
+            <div class="cont4">
+                <h1 class="title-color">ORGULLO</h1>
+                <div class="container-form">
+
+                    <form id="myForm4" action="">
+                        <div class="cont-form-two" id="obj2">
+                            <div class="quest2">
+                                <p class="parrafo-quest">
+                                    Conozco mis objetivos y cómo mi trabajo contribuye a los resultados del negocio.
+                                </p>
+
+                                <div class="group-button">
+                                    <div class="box-like space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="4quest1"
+                                            id="4myRadio1" required>
+                                        <label class=" radio_label1" for="4myRadio1"><i
+                                                class="fa-regular fa-thumbs-up"></i></label>
+                                    </div>
+                                    <div class="box-dislike space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="4quest1"
+                                            id="4myRadio2" required>
+                                        <label class="radio_label2" for="4myRadio2"><i
+                                                class="fa-regular fa-thumbs-down"></i></i></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quest2">
+                                <p class="parrafo-quest">
+                                    En este trabajo cada día tengo la oportunidad de hacer lo que mejor hago
+                                </p>
+
+                                <div class="group-button">
+                                    <div class="box-like space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="4quest2"
+                                            id="4myRadio3" required>
+                                        <label class=" radio_label1" for="4myRadio3"><i
+                                                class="fa-regular fa-thumbs-up"></i></label>
+                                    </div>
+                                    <div class="box-dislike space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="4quest2"
+                                            id="4myRadio4" required>
+                                        <label class="radio_label2" for="4myRadio4"><i
+                                                class="fa-regular fa-thumbs-down"></i></i></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quest2">
+                                <p class="parrafo-quest">
+                                    Mi trabajo tiene un significado especial para mí: éste no es "sólo un trabajo"
+                                </p>
+
+                                <div class="group-button">
+                                    <div class="box-like space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="4quest3"
+                                            id="4myRadio5" required>
+                                        <label class=" radio_label1" for="4myRadio5"><i
+                                                class="fa-regular fa-thumbs-up"></i></label>
+                                    </div>
+                                    <div class="box-dislike space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="4quest3"
+                                            id="4myRadio6" required>
+                                        <label class="radio_label2" for="4myRadio6"><i
+                                                class="fa-regular fa-thumbs-down"></i></i></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quest2">
+                                <p class="parrafo-quest">
+                                    Siento que el trabajo que realizo es valioso.
+                                </p>
+
+                                <div class="group-button">
+                                    <div class="box-like space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="4quest4"
+                                            id="4myRadio7" required>
+                                        <label class=" radio_label1" for="4myRadio7"><i
+                                                class="fa-regular fa-thumbs-up"></i></label>
+                                    </div>
+                                    <div class="box-dislike space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="4quest4"
+                                            id="4myRadio8" required>
+                                        <label class="radio_label2" for="4myRadio8"><i
+                                                class="fa-regular fa-thumbs-down"></i></i></label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="quest2">
+                                <p class="parrafo-quest">
+                                    Cuando veo lo que logramos, me siento orgulloso(a).
+                                </p>
+
+                                <div class="group-button">
+                                    <div class="box-like space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="4quest5"
+                                            id="4myRadio9" required>
+                                        <label class=" radio_label1" for="4myRadio9"><i
+                                                class="fa-regular fa-thumbs-up"></i></label>
+                                    </div>
+                                    <div class="box-dislike space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="4quest5"
+                                            id="4myRadio10" required>
+                                        <label class="radio_label2" for="4myRadio10"><i
+                                                class="fa-regular fa-thumbs-down"></i></i></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="button button-sec" id="button-sig" type="button"
+                                onclick="next('obj2','obj3')" style="height: 40px; width:99px ; border: none;
+                    border-radius: 6px; ">Siguiente</button>
+                            <!-- <button id="submit-in" type="submit"   onclick="back()" style="height: 40px; border: none;
+                    border-radius: 6px; ">Enviar</button> -->
+                        </div>
+
+                        <!--segundo bloque preguntas-->
+                        <div class="cont-form-two" style="display: none;" id="obj3">
+
+                            <div class="quest2">
+                                <p class="parrafo-quest">
+                                    Mis compañeros(as) de trabajo están comprometidos(as) a realizar un trabajo
+                                    excelente.
+                                </p>
+
+                                <div class="group-button">
+                                    <div class="box-like space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="4quest5"
+                                            id="4myRadio9" required>
+                                        <label class=" radio_label1" for="4myRadio9"><i
+                                                class="fa-regular fa-thumbs-up"></i></label>
+                                    </div>
+                                    <div class="box-dislike space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="4quest5"
+                                            id="4myRadio10" required>
+                                        <label class="radio_label2" for="4myRadio10"><i
+                                                class="fa-regular fa-thumbs-down"></i></i></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quest2">
+                                <p class="parrafo-quest">
+                                    Las personas aquí se adaptan rápidamente a los cambios necesarios para el éxito de
+                                    nuestra organización.
+                                </p>
+
+                                <div class="group-button">
+                                    <div class="box-like space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="4quest6"
+                                            id="4myRadio11" required>
+                                        <label class=" radio_label1" for="4myRadio11"><i
+                                                class="fa-regular fa-thumbs-up"></i></label>
+                                    </div>
+                                    <div class="box-dislike space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="4quest6"
+                                            id="4myRadio12" required>
+                                        <label class="radio_label2" for="4myRadio12"><i
+                                                class="fa-regular fa-thumbs-down"></i></i></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quest2">
+                                <p class="parrafo-quest">
+                                    Quiero trabajar aquí por mucho tiempo.
+                                </p>
+
+                                <div class="group-button">
+                                    <div class="box-like space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="4quest7"
+                                            id="4myRadio13" required>
+                                        <label class=" radio_label1" for="4myRadio13"><i
+                                                class="fa-regular fa-thumbs-up"></i></label>
+                                    </div>
+                                    <div class="box-dislike space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="4quest7"
+                                            id="4myRadio14" required>
+                                        <label class="radio_label2" for="4myRadio14"><i
+                                                class="fa-regular fa-thumbs-down"></i></i></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quest2">
+                                <p class="parrafo-quest">
+                                    Estoy orgulloso(a) de decir a otros(as) que trabajo aquí.
+                                </p>
+
+                                <div class="group-button">
+                                    <div class="box-like space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="4quest8"
+                                            id="4myRadio15" required>
+                                        <label class=" radio_label1" for="4myRadio15"><i
+                                                class="fa-regular fa-thumbs-up"></i></label>
+                                    </div>
+                                    <div class="box-dislike space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="4quest8"
+                                            id="4myRadio16" required>
+                                        <label class="radio_label2" for="4myRadio16"><i
+                                                class="fa-regular fa-thumbs-down"></i></i></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quest2">
+                                <p class="parrafo-quest">
+                                    Cuando me despierto por la mañana siento ganas de ir a trabajar.
+                                </p>
+
+                                <div class="group-button">
+                                    <div class="box-like space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="4quest9"
+                                            id="4myRadio17" required>
+                                        <label class=" radio_label1" for="4myRadio17"><i
+                                                class="fa-regular fa-thumbs-up"></i></label>
+                                    </div>
+                                    <div class="box-dislike space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="4quest9"
+                                            id="4myRadio18" required>
+                                        <label class="radio_label2" for="4myRadio18"><i
+                                                class="fa-regular fa-thumbs-down"></i></i></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: -30;">
+
+                                <button class=" button button-sec" id="button-back" type="button"
+                                    onclick="backq('obj3','obj2')" style="height: 40px; width:118px ; border: none;
+                    border-radius: 6px;  ">Retroceder</button>
+                                <button class="button button-sec" id="submit-form" type="submit" style="height: 40px; width:118px ; border: none;
+                    border-radius: 6px;  ">Enviar</button>
+                            </div>
+                        </div>
+
+
+                    </form>
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <!--section9-->
+        <section class="sec9 " id="seguridad">
+            <!-- <a id="skip"  class="skip" href="#dimension"><i class="fa-solid fa-arrow-left"></i></a> -->
+            <!-- <button id="skip" style="cursor: pointer;" class="skip" onclick="backdim()" type="button"><i class="fa-solid fa-arrow-left"></i></button> -->
+
+            <div class="cont4">
+                <h1 class="title-color">PROÓSITO</h1>
+                <div class="container-form">
+                    <form name="myForm5" id="myForm" action="">
+                        <div class="cont-form-two">
+                            <div class="quest2">
+                                <p class="parrafo-quest">
+                                    La empresa promueve y prioriza la cultura de Seguridad y Salud en el Trabajo.
+                                </p>
+
+                                <div class="group-button">
+                                    <div class="box-like space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="5quest1"
+                                            id="5myRadio1">
+                                        <label class=" radio_label1" for="5myRadio1"><i
+                                                class="fa-regular fa-thumbs-up"></i></label>
+                                    </div>
+                                    <div class="box-dislike space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="5quest1"
+                                            id="5myRadio2">
+                                        <label class="radio_label2" for="5myRadio2"><i
+                                                class="fa-regular fa-thumbs-down"></i></i></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="button button-sec" role="button" type="submit" id="submit-in" style="height: 40px; border: none;
+                        border-radius: 6px; ">Enviar</button>
+
+                        </div>
+                    </form>
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <!--section10-->
+        <section class="sec10 " id="camaraderia">
+            <!-- <a class="skip" href="#dimension"><i class="fa-solid fa-arrow-left"></i></a> -->
+            <button id="skip" style="cursor: pointer;" class="skip" onclick="backdim()" type="button"><i
+                    class="fa-solid fa-arrow-left"></i></button>
+            <div class="cont4">
+                <h1 class="title-color">CAMARADADERÍA</h1>
+                <div class="container-form">
+
+                    <form id="myForm6" action="">
+                        <div class="cont-form-two" id="obj4">
+                            <div class="quest2">
+                                <p class="parrafo-quest">
+                                    Puedo expresarme libremente y ser yo mismo(a) en mi lugar de trabajo. 
+                                </p>
+
+                                <div class="group-button">
+                                    <div class="box-like space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="6quest1"
+                                            id="6myRadio1" required>
+                                        <label class=" radio_label1" for="6myRadio1"><i
+                                                class="fa-regular fa-thumbs-up"></i></label>
+                                    </div>
+                                    <div class="box-dislike space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="6quest1"
+                                            id="6myRadio2" required>
+                                        <label class="radio_label2" for="6myRadio2"><i
+                                                class="fa-regular fa-thumbs-down"></i></i></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quest2">
+                                <p class="parrafo-quest">
+                                    Aquí se celebran eventos especiales ya sea de manera remota o presencial. 
+                                </p>
+
+                                <div class="group-button">
+                                    <div class="box-like space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="6quest2"
+                                            id="6myRadio3" required>
+                                        <label class=" radio_label1" for="6myRadio3"><i
+                                                class="fa-regular fa-thumbs-up"></i></label>
+                                    </div>
+                                    <div class="box-dislike space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="6quest2"
+                                            id="6myRadio4" required>
+                                        <label class="radio_label2" for="6myRadio4"><i
+                                                class="fa-regular fa-thumbs-down"></i></i></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quest2">
+                                <p class="parrafo-quest">
+                                    Las personas aquí se preocupan por sus compañeros(as). 
+                                </p>
+
+                                <div class="group-button">
+                                    <div class="box-like space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="6quest3"
+                                            id="6myRadio5" required>
+                                        <label class=" radio_label1" for="6myRadio5"><i
+                                                class="fa-regular fa-thumbs-up"></i></label>
+                                    </div>
+                                    <div class="box-dislike space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="6quest3"
+                                            id="6myRadio6" required>
+                                        <label class="radio_label2" for="6myRadio6"><i
+                                                class="fa-regular fa-thumbs-down"></i></i></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quest2">
+                                <p class="parrafo-quest">
+                                    A las personas les gusta trabajar en la organización, ya sea física o remotamente.
+                                </p>
+
+                                <div class="group-button">
+                                    <div class="box-like space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="6quest4"
+                                            id="6myRadio7" required>
+                                        <label class=" radio_label1" for="6myRadio7"><i
+                                                class="fa-regular fa-thumbs-up"></i></label>
+                                    </div>
+                                    <div class="box-dislike space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="6quest4"
+                                            id="6myRadio8" required>
+                                        <label class="radio_label2" for="6myRadio8"><i
+                                                class="fa-regular fa-thumbs-down"></i></i></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="button button-sec" id="button-sig" type="button"
+                                onclick="next('obj4','obj5')" style="height: 40px; width:99px ; border: none;
+                    border-radius: 6px; ">Siguiente</button>
+                            <!-- <button id="submit-in" type="submit"   onclick="back()" style="height: 40px; border: none;
+                    border-radius: 6px; ">Enviar</button> -->
+                        </div>
+
+                        <!--segundo bloque preguntas-->
+                        <div class="cont-form-two" style="display: none;" id="obj5">
+
+                            <div class="quest2">
+                                <p class="parrafo-quest">
+                                    Este es un lugar entretenido donde trabajar.
+                                </p>
+
+                                <div class="group-button">
+                                    <div class="box-like space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="6quest5"
+                                            id="6myRadio9" required>
+                                        <label class=" radio_label1" for="6myRadio9"><i
+                                                class="fa-regular fa-thumbs-up"></i></label>
+                                    </div>
+                                    <div class="box-dislike space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="6quest5"
+                                            id="6myRadio10" required>
+                                        <label class="radio_label2" for="6myRadio10"><i
+                                                class="fa-regular fa-thumbs-down"></i></i></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quest2">
+                                <p class="parrafo-quest">
+                                    Cuando ingresas a la organización se te hace sentir bienvenido(a).
+                                </p>
+
+                                <div class="group-button">
+                                    <div class="box-like space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="6quest6"
+                                            id="6myRadio11" required>
+                                        <label class=" radio_label1" for="6myRadio11"><i
+                                                class="fa-regular fa-thumbs-up"></i></label>
+                                    </div>
+                                    <div class="box-dislike space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="6quest6"
+                                            id="6myRadio12" required>
+                                        <label class="radio_label2" for="6myRadio12"><i
+                                                class="fa-regular fa-thumbs-down"></i></i></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quest2">
+                                <p class="parrafo-quest">
+                                    Cuando las personas cambian de función o de área de trabajo, se les hace sentir como en casa. 
+                                </p>
+
+                                <div class="group-button">
+                                    <div class="box-like space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="6quest7"
+                                            id="6myRadio13" required>
+                                        <label class=" radio_label1" for="6myRadio13"><i
+                                                class="fa-regular fa-thumbs-up"></i></label>
+                                    </div>
+                                    <div class="box-dislike space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="6quest7"
+                                            id="6myRadio14" required>
+                                        <label class="radio_label2" for="6myRadio14"><i
+                                                class="fa-regular fa-thumbs-down"></i></i></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quest2">
+                                <p class="parrafo-quest">
+                                    Uno(a) puede contar con la colaboraciÃ³n de las personas.
+                                </p>
+
+                                <div class="group-button">
+                                    <div class="box-like space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="6quest8"
+                                            id="6myRadio15" required>
+                                        <label class=" radio_label1" for="6myRadio15"><i
+                                                class="fa-regular fa-thumbs-up"></i></label>
+                                    </div>
+                                    <div class="box-dislike space-box ">
+                                        <input class="radio_input" type="radio" value="option1 " name="6quest8"
+                                            id="6myRadio16" required>
+                                        <label class="radio_label2" for="6myRadio16"><i
+                                                class="fa-regular fa-thumbs-down"></i></i></label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div style="display: flex; gap: -30;">
+
+                                <button class=" button button-sec" id="button-back" type="button"
+                                    onclick="backq('obj5','obj4')" style="height: 40px; width:118px ; border: none;
+                    border-radius: 6px;  ">Retroceder</button>
+                                <button class="button button-sec" id="submit-form" type="submit" style="height: 40px; width:118px ; border: none;
+                    border-radius: 6px;  ">Enviar</button>
+                            </div>
+                        </div>
+
+
+                    </form>
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
     </div>
 
 
@@ -712,83 +1305,160 @@
     </div>
     </div>
     <script>
+window.onload = function() {
+    if (localStorage.token1) {
+     
+        document.querySelector('#btn1').disabled = true;
+        document.getElementById("img1").style.filter = "grayscale(1)";
+        document.getElementById("firstq").classList.remove("hover");
+        }
 
+        if (localStorage.token2) {
+     
+     document.querySelector('#btn2').disabled = true;
+     document.getElementById("img2").style.filter = "grayscale(1)";
+     document.getElementById("firstq2").classList.remove("hover");
+     2
+     if (localStorage.token3) {
+     
+     document.querySelector('#btn3').disabled = true;
+     document.getElementById("img3").style.filter = "grayscale(1)";
+     document.getElementById("firstq3").classList.remove("hover");
+     }
+     if (localStorage.token4) {
+     
+     document.querySelector('#btn4').disabled = true;
+     document.getElementById("img4").style.filter = "grayscale(1)";
+     document.getElementById("firstq4").classList.remove("hover");
+     }
+     if (localStorage.token5) {
+     
+     document.querySelector('#btn5').disabled = true;
+     document.getElementById("img5").style.filter = "grayscale(1)";
+     document.getElementById("firstq5").classList.remove("hover");
+     }
+     if (localStorage.token6) {
+     
+     document.querySelector('#btn6').disabled = true;
+     document.getElementById("img6").style.filter = "grayscale(1)";
+     document.getElementById("firstq6").classList.remove("hover");
+     }
+     if (localStorage.token7) {
+     
+     document.querySelector('#btn7').disabled = true;
+     document.getElementById("img7").style.filter = "grayscale(1)";
+     document.getElementById("firstq7").classList.remove("hover");
+     }
 
-var form = document.forms['myForm']
-var form1 = document.forms['myForm1']
-var form2 = document.forms['myForm2']
-var form3 = document.forms['myForm3']
-var form4 = document.forms['myForm4']
-var form5 = document.forms['myForm5']
-var form6 = document.forms['myForm7']
-
-
-
-
-form.onsubmit = function (e) {
    
+
+        
+}
+}
+
+
+        var form = document.forms['myForm']
+        var form1 = document.forms['myForm1']
+        var form2 = document.forms['myForm2']
+        var form3 = document.forms['myForm3']
+        var form4 = document.forms['myForm4']
+        var form5 = document.forms['myForm5']
+        var form6 = document.forms['myForm6']
+
+
+
+
+        form.onsubmit = function (e) {
+            e.preventDefault();
+            // alert("aea")
+            localStorage.token1 ="token1"
+            Swal.fire(
+  'Bien hecho!',
+  'Tus datos han sido guardados!',
+  'success'
+)
+setTimeout(() => {
     e.target.reset();
-    window.location.href ="./index.html"
-    return false;
-}
+    window.location.href = "./index.html";
+}, 2000);
+           
+            
+            
+            // document.getElementById("holitas").style.color='red';
+           
+           
+        }
 
-form1.onsubmit = function (e) {
-   
-   e.target.reset();
-   window.location.href ="./index.html"
-   return false;
-}
-form2.onsubmit = function (e) {
-   
-   e.target.reset();
-   window.location.href ="./index.html"
-   return false;
-}
-form3.onsubmit = function (e) {
-   
-   e.target.reset();
-   window.location.href ="./index.html"
-   return false;
-}
-form4.onsubmit = function (e) {
-   
-   e.target.reset();
-   window.location.href ="./index.html"
-   return false;
-}
-form5.onsubmit = function (e) {
-   
-   e.target.reset();
-   window.location.href ="./index.html"
-   return false;
-}
-form6.onsubmit = function (e) {
-   
-   e.target.reset();
-   window.location.href ="./index.html"
-   return false;
-}
+        form1.onsubmit = function (e) {
+
+            // e.target.reset();
+            // window.location.href = "./index.html"
+            // return false;
+
+            e.preventDefault();
+            // alert("aea")
+            localStorage.token2 ="token2"
+            Swal.fire(
+  'Bien hecho!',
+  'Tus datos han sido guardados!',
+  'success'
+)
+setTimeout(() => {
+    e.target.reset();
+    window.location.href = "./index.html";
+}, 2000);
+        }
+        form2.onsubmit = function (e) {
+
+            e.target.reset();
+            window.location.href = "./index.html"
+            return false;
+        }
+        form3.onsubmit = function (e) {
+
+            e.target.reset();
+            window.location.href = "./index.html"
+            return false;
+        }
+        form4.onsubmit = function (e) {
+
+            e.target.reset();
+            window.location.href = "./index.html"
+            return false;
+        }
+        form5.onsubmit = function (e) {
+
+            e.target.reset();
+            window.location.href = "./index.html"
+            return false;
+        }
+        form6.onsubmit = function (e) {
+
+            e.target.reset();
+            window.location.href = "./index.html"
+            return false;
+        }
 
 
         function back() {
-                preventDefault();
-     
+            preventDefault();
+
             document.getElementById('myForm').reset();
-           location.href ="./index.html?#dimension";
-        
+            location.href = "./index.html?#dimension";
+
             // document.getElementById("skip").style.display = "none";
             // document.getElementById("skip-home").style.display = "block";
-    
+
         }
 
-//         function back4() {
+        //         function back4() {
 
-// alert("gracias por hacer la encuesta");
-//  document.getElementsByName('Form').reset();
-// location.href = '#dimension';
-// document.getElementById("skip").style.display = "none";
-// document.getElementById("skip-home").style.display = "block";
-// }
+        // alert("gracias por hacer la encuesta");
+        //  document.getElementsByName('Form').reset();
+        // location.href = '#dimension';
+        // document.getElementById("skip").style.display = "none";
+        // document.getElementById("skip-home").style.display = "block";
+        // }
 
         function show(a) {
             document.getElementById("skip-home").style.display = "none";
@@ -797,13 +1467,21 @@ form6.onsubmit = function (e) {
         }
 
         function backdim() {
-            
+
             document.getElementById("skip-home").style.display = "block";
             document.getElementById("skip").style.display = "none";
             window.location.href = './index.html';
         }
 
-        function next(a,b) {
+        function home() {
+
+window.location.href = '../index.html';
+localStorage.clear();
+
+return false;
+}
+
+        function next(a, b) {
 
             // document.getElementById("myForm").reset();
             //   alert("gracias por hacer la encuesta");
@@ -815,7 +1493,7 @@ form6.onsubmit = function (e) {
 
         }
 
-        function backq(a,b) {
+        function backq(a, b) {
 
             // document.getElementById("myForm").reset();
             //   alert("gracias por hacer la encuesta");
@@ -841,6 +1519,7 @@ form6.onsubmit = function (e) {
 
         });
     </script>
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
